@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+const refreshButton = document.getElementById("refreshButton");
+refreshButton.addEventListener("click", function(){
+    location.reload();
+})
+
 async function solveSudoku() {
     const gridSize = 9;
     const sudokuArray = [];
